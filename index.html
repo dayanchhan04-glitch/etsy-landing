@@ -1,40 +1,92 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Minimal Streetwear</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
-      height: 100vh;
-      background: url("hoodie.jpg") center/cover no-repeat;
-      position: relative;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: #0f0f0f;
       color: #fff;
     }
 
-    /* Dark overlay */
-    body::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background: rgba(0, 0, 0, 0.6);
-    }
-
-    .content {
-      position: relative;
-      z-index: 2;
-      height: 100%;
+    .hero {
+      min-height: 100vh;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      padding: 30px 20px;
       text-align: center;
-      padding: 20px;
     }
 
+    .product-image {
+      width: 100%;
+      max-width: 420px;
+      border-radius: 22px;
+      box-shadow: 0 25px 60px rgba(0,0,0,0.6);
+      margin-bottom: 35px;
+    }
+
+    h1 {
+      font-size: 32px;
+      margin: 0 0 12px;
+      letter-spacing: 0.5px;
+    }
+
+    p {
+      font-size: 16px;
+      color: #cfcfcf;
+      max-width: 320px;
+      line-height: 1.5;
+      margin-bottom: 28px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 16px 36px;
+      background: #ffffff;
+      color: #000;
+      text-decoration: none;
+      font-weight: 600;
+      border-radius: 40px;
+      transition: all 0.25s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 30px rgba(255,255,255,0.25);
+    }
+  </style>
+</head>
+
+<body>
+  <section class="hero">
+    <img 
+      src="IMG_20251222_160603.png" 
+      alt="Minimal Sweatshirt"
+      class="product-image"
+    />
+
+    <h1>Minimal Streetwear</h1>
+    <p>
+      Limited hoodies & sweatshirts.  
+      Clean, bold and timeless design.
+    </p>
+
+    <a 
+      href="https://devletdesignsstore.etsy.com" 
+      target="_blank" 
+      class="btn"
+    >
+      Visit Etsy Store
+    </a>
+  </section>
+</body>
+</html>
     h1 {
       font-size: 28px;
       margin-bottom: 10px;
